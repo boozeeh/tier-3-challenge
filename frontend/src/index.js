@@ -62,12 +62,9 @@ function App() {
         <tbody>
           {stats.salesByCountry.map(row => (
             <tr key={row.country}>
-              {/* <td style={{padding: 8}}>{row.country}</td> */}
-              {/* console.log(row.countryIdx) */}
-              <td style={{padding: 8}}>{row.country}</td>
+              <td style={{padding: 8}}>{row.countryName.toLocaleString()}</td>
               <td style={{padding: 8, textAlign: 'right'}}>{row.sales.toLocaleString()}</td>
               <td style={{padding: 8, textAlign: 'right'}}>{row.numberOfTransactions.toLocaleString()}</td>
-
             </tr>
           ))}
         </tbody>
