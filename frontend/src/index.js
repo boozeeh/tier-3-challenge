@@ -11,6 +11,7 @@ function App() {
     fetch('http://localhost:5000/api/stats')
       .then(res => res.json())
       .then(data => {
+        console.log('API response:', data);
         setStats(data);
         setLoading(false);
       })

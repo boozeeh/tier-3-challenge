@@ -3,4 +3,4 @@ const isVisitorsKpiEnabled = () => {
 };
 
 
-module.exports = { isVisitorsKpiEnabled };
+module.exports = { isVisitorsKpiEnabled: () => true };
